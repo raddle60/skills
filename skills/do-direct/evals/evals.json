@@ -1,0 +1,23 @@
+{
+  "skill_name": "do",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我创建一个名为 test_project 的文件夹",
+      "expected_output": "技能应生成计划，请求用户确认，然后等待用户确认后才执行",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "帮我重构 src 目录下的 auth 模块，提高代码可维护性",
+      "expected_output": "技能应生成详细的执行计划（包括分析、设计、重构步骤），等待用户确认或修改",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "帮我写一个 Python 脚本来自动备份数据库",
+      "expected_output": "技能应先了解备份需求（数据库类型、备份频率、存储位置等），然后生成计划供用户确认",
+      "files": []
+    }
+  ]
+}
