@@ -11,6 +11,7 @@ description: |
   - User asks "帮我..." or "帮我处理..."or "实现..." or "修改..." or "增加..."
   This skill should ALWAYS be used for any task that involves executing
   actions, not just responding with information.
+context: fork  
 ---
 
 # Do Skill - 通用执行技能
