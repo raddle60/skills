@@ -10,12 +10,14 @@ description: |
   - User asks "帮我直接..." or "帮我直接处理..."or "直接实现..." or "直接修改..." or "直接增加..."
   This skill should ALWAYS be used for any task that involves executing
   actions, not just responding with information.
-context: fork
 ---
 
 # Do Skill - 通用执行技能
 
-这是一个执行"**计划 → 执行**"流程的技能。分析完计划后，直接按照计划执行。
+这是一个执行"**计划 → 执行**"流程的技能。
+分析完计划后，在阶段二：执行阶段
+- 如果是编码任务，让 `programer` agent 执行，无需用户确认，传递完整执行计划，并告知 agent 2.2、2.3及其子章节无法实现时的处理原则。
+- 如果非编码任务，正常执行
 
 ## 核心原则
 
@@ -68,8 +70,7 @@ context: fork
 
 ### 2.1 执行前确认
 
-如果是代码编写任务，让 programer agent 执行，无需用户确认。并且告知 agent 上面的计划且严格按照计划执行，和告知 agent 2.3及其子章节无法实现时的处理原则。
-其他任务，直接执行，无需用户确认。
+无需用户确认
 
 ### 2.2 严格按计划执行
 
@@ -140,7 +141,7 @@ context: fork
 - 报告执行结果
 - 列出已完成的所有步骤
 - 如有未完成的步骤，说明原因
-- 询问用户是否满意
+- 明确指出任务执行是否使用了
 
 ## 执行流程图
 
@@ -218,5 +219,5 @@ context: fork
 - 状态: 成功
 - 已完成步骤:
   1. ✓ 创建 test 文件夹
-- 结果: test 文件夹已成功创建
+- 结果: test 文件夹已创建
 
